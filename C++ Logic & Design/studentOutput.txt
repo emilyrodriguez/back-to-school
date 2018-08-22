@@ -1,0 +1,7 @@
+
+Einstein, Albert Average: 87.10
+Franklin, Ben Average: 79.50
+Edison, Tom Average: 65.10
+Tesla, Nick Average: 80.10
+Dijkstra, Ed Average: 77.50
+Highest average: 87.10

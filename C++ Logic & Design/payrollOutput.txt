@@ -1,0 +1,6 @@
+
+"Bones_Bob" $420.00
+"Smith_Sally" $450.00
+"Toll_Tom" $283.50
+"Anderson_Ann" $145.00
+Total employee pay $1298.50
