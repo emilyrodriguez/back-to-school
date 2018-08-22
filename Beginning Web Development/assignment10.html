@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 10</title>
+	<!-- Emily Rodriguez
+		7/1/18
+	-->
+	<script type="text/javascript">
+		var rankTotal = new Array(9);
+		
+		function buildArray() {
+			for (var i = 0; i < rankTotal.length; ++i) {
+				rankTotal[i] = 0;
+			}
+		}
+		
+		function calculateSalary() {
+			var salary;
+			var rank;
+			var sales = document.getElementById("sales");
+
+			salary = 200 + (parseInt(sales.grossSales.value) * 0.09);
+			document.getElementById("empPay").value = salary;
+			rank = Math.floor(salary / 100);
+
+			if (rank > 9) {
+				rank = 10;
+			}
+
+			++rankTotal[rank - 2]
+			generateRange();
+		}
+
+		function generateRange() {
+			var sales = document.getElementById("sales");
+			sales.output.value = 
+			"Weekly salary ranges: \n" + 
+			"$200–299: " + rankTotal[0] + "\n" +
+			"$300–399: " + rankTotal[1] + "\n" +
+			"$400–499: " + rankTotal[2] + "\n" +
+			"$500–599: " + rankTotal[3] + "\n" +
+			"$600–699: " + rankTotal[4] + "\n" +
+			"$700–799: " + rankTotal[5] + "\n" +
+			"$800–899: " + rankTotal[6] + "\n" +
+			"$900–999: " + rankTotal[7] + "\n" +
+			"$1000 and over: " + rankTotal[8];
+		}
+	</script>
+</head>
+<body onload="buildArray();">
+	<form id="sales" action="">
+		<h1>Enter weekly gross sales amount: </h1>
+		<input type="text" name="grossSales"/>
+		<input type="button" value="Submit" onclick="calculateSalary();"/> 
+		<h3>Employee salary: </h3>
+		<input type="text" id="empPay" disabled/>
+		<h3>Salary Rankings: </h3>
+		<textarea name="output" rows="10" cols="40" disabled></textarea> 
+	</form>
+</body>
+</html>

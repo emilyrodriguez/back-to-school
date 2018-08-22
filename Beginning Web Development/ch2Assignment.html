@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--Emily Rodriguez
+	Ch 2 Assignment
+	6/7/18
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Local University</title>
+		<meta name="keywords" content="university, college, San Antonio, campus visit, tour">
+		<meta name="description" content="A local university has asked you to create an HTML5 document that allows prospective college students to provide feedback about their campus visit.">
+	</head>
+	<body>
+		<form method="post" action="http://www.deitel.com">
+			<h1>Campus Tour Feedback</h1>
+			<p>Thank you for visiting Local University! Please tell us about your campus tour experience.</p>
+				<p><label>Name:</label>
+					<input name="studentName" type="text" size="40">
+				</p>
+				<p><label>Email:</label>
+					<input name="studentEmail" type="text" size="40">
+				</p>
+				<p><label>What did you like about the campus? Select all that apply:</label>
+				</p>						
+					<label>
+						<input name="thingsLiked" type="checkbox" value="Campus">Campus
+					</label>
+					<label>
+						<input name="thingsLiked" type="checkbox" value="Students">Students
+					</label>
+					<label>
+						<input name="thingsLiked" type="checkbox" value="Location">Location
+					</label>
+					<label>
+						<input name="thingsLiked" type="checkbox" value="Atmosphere">Atmosphere
+					</label>
+					<label>
+						<input name="thingsLiked" type="checkbox" value="Dorm Rooms">Dorm Rooms
+					</label>
+					<label>
+						<input name="thingsLiked" type="checkbox" value="Sports">Sports
+					</label>
+				<p><label>How did you become interested in Local University? Select one:</label></p>
+				<p>
+					<label>
+						<input name="collegeReference" type="radio" value="friends">Friends
+					</label>
+					<label>
+						<input name="collegeReference" type="radio" value="television">Television
+					</label>
+					<label>
+						<input name="collegeReference" type="radio" value="Internet">Internet
+					</label>
+					<label>
+						<input name="collegeReference" type="radio" value="Other">Other
+					</label>
+				</p>
+				<p><label>Please list any additional comments:</label></p>
+				<p>
+					<textarea name="comments" rows="5" cols="60"></textarea>
+				</p>
+				<p>
+					<input type="reset" value="Clear">
+					<input type="submit" value="Submit">
+				</p>
+		</form>
+	</body>
+</html>

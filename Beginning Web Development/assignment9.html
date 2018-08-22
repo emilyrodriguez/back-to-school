@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coin Flip</title>
+	<!-- Emily Rodriguez
+		 7/1/18
+	 -->
+</head>
+<body>
+	<form name="coinToss">
+		<h1>Coin Flip</h1>
+		<p>Heads: <input id ="heads" type ="text"/></p>
+		<p>Tails: <input id ="tails" type ="text"/></p>
+		<input type="button" onclick="toss();" value="Toss Coin">
+	</form>
+	<script type="text/javascript">
+		var tails = 0;
+		var heads = 0;
+		
+		function toss() {
+			if (flip()) {
+				++heads;
+				document.getElementById("heads").value = heads;
+			} else {
+				++tails;
+				document.getElementById("tails").value = tails;
+			}
+		}
+
+		function flip() {
+			var coinFlip = parseInt(Math.floor(Math.random() * 2));
+			if (coinFlip == 1) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

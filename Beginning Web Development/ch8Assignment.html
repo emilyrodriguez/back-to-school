@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ch. 8 Assignment</title>
+	<!--
+		Emily Rodriguez
+		6/24/18
+	-->
+	<script type="text/javascript">
+		var quit = 999;
+		var price;
+		var quantity;
+		var grandTotal = 0;
+		var choice;
+
+		while (choice != quit) {
+			choice = parseInt(prompt("Enter a product number 1-5 or 999 to stop: "));
+			switch (choice) {
+				case 1:
+					price = 2.98;
+					quantity = prompt("Enter quantity sold for Product " + choice + ": ");
+					total = parseInt(quantity) * price;
+					grandTotal += total;
+					document.write("Total sales for Product 1: $" + total.toFixed(2) + "<br/>");	
+					break;
+				case 2:
+					price = 4.50;
+					quantity = prompt("Enter quantity sold for Product " + choice + ": ");
+					total = parseInt(quantity) * price;
+					grandTotal += total;
+					document.write("Total sales for Product 2: $" + total.toFixed(2) + "<br/>");	
+					break;
+				case 3:
+					price = 9.98;
+					quantity = prompt("Enter quantity sold for Product " + choice + ": ");
+					total = parseInt(quantity) * price;
+					grandTotal += total;
+					document.write("Total sales for Product 3: $" + total.toFixed(2) + "<br/>");	
+					break;
+				case 4:
+					price = 4.49;
+					quantity = prompt("Enter quantity sold for Product " + choice + ": ");
+					total = parseInt(quantity) * price;
+					grandTotal += total;
+					document.write("Total sales for Product 4: $" + total.toFixed(2) + "<br/>");	
+					break;
+				case 5:
+					price = 6.87;
+					quantity = prompt("Enter quantity sold for Product " + choice + ": ");
+					total = parseInt(quantity) * price;
+					grandTotal += total;
+					document.write("Total sales for Product 5: $" + total.toFixed(2) + "<br/>");	
+					break;
+				default:
+					if (choice == quit) {
+						console.log("Done");
+					} else {
+						document.write("Input Error! <br/>");
+					}
+			}
+		}
+		document.write("Total for all products sold: $" + grandTotal.toFixed(2));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

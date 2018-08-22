@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Emily Rodriguez
+		6/23/18
+	-->
+	<title>Chapter 7 Assignment</title>
+	<script type="text/javascript">
+		var fourInt = prompt("Please enter a four-digit number (ex: 1234): ");
+		fourInt.split("");
+
+		var int1 = parseInt(fourInt[0]);
+		var int2 = parseInt(fourInt[1]);
+		var int3 = parseInt(fourInt[2]);
+		var int4 = parseInt(fourInt[3]);
+
+		if (fourInt.length !== 4 || isNaN(fourInt)) {
+			fourInt = alert("Error! Input was not a four-digit number.");
+			location.reload();
+		} else {
+			int1 =((int1 + 7) % 10);
+			int2 =((int2 + 7) % 10);
+			int3 =((int3 + 7) % 10);
+			int4 =((int4 + 7) % 10);
+			document.write("<p>The encrypted number is: " + int3 + int4 + int1 + int2 + "</p>");
+		}
+
+	</script>
+</head>
+<body>
+</body>
+</html>
